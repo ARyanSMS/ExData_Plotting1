@@ -72,6 +72,9 @@ colnames(data) <- c("DateTime",colnames(data[,2:8]))
 ## Set the PNG file to contain the histogram
 png("plot1.png")
 
+## Set the background to transparent
+par(bg = "transparent")
+
 ## Create the histogram, set the main title, x-axis title and bar colour
 hist(data$Global_active_power, main = "Global Active Power", xlab = "Global Active Power (kilowatts)", col = "#FF2500")
 

@@ -72,6 +72,9 @@ colnames(data) <- c("DateTime",colnames(data[,2:8]))
 ## Set the PNG file to contain the histogram
 png("plot2.png")
 
+## Set the background to transparent
+par(bg = "transparent")
+
 ## Create the line plot, set the main title, x-axis title and y-axis title
 plot(data$DateTime, data$Global_active_power, type = "l", main = "", xlab = "", ylab = "Global Active Power (kilowatts)")
 

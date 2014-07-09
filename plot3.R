@@ -72,6 +72,9 @@ colnames(data) <- c("DateTime",colnames(data[,2:8]))
 ## Set the PNG file to contain the histogram
 png("plot3.png")
 
+## Set the background to transparent
+par(bg = "transparent")
+
 ## Create the line plot for sub metering 1, set the main title, x-axis title, y-axis title and line colour
 plot(data$DateTime, data$Sub_metering_1, main = "", xlab = "", ylab = "Energy sub metering", col = "#000000", type = "l")
 ## Add a line for sub metering 2, and set the line colour

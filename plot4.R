@@ -72,6 +72,9 @@ colnames(data) <- c("DateTime",colnames(data[,2:8]))
 ## Set the PNG file to contain the histogram
 png("plot4.png")
 
+## Set the background to transparent
+par(bg = "transparent")
+
 ## Create 4 plots in a 2x2 arrangement
 par(mfrow = c(2,2))
 
